@@ -10,10 +10,8 @@ const UserProfile = ({user={profilePic:faker.image.avatar(),
                             state: faker.address.state(),
                             jobType: faker.name.jobTitle(),
                             catchPhrase: faker.company.catchPhrase(),
-                            profile: faker.helpers.createCard(),
                             rating: Math.floor(Math.random() * 6), // Generate a Random number between 0 and 5
 }}) => {
-
   return (
     <div style={{backgroundColor:"white"}}>
         <div className="col-md-4 animated fadeIn" >
